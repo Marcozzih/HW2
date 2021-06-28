@@ -1,0 +1,197 @@
+body {
+    color: white;
+    margin: 0;
+  }
+
+  nav {
+    height: 80px;
+    font-family: 'Sofia', sans;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: black;
+  }
+
+  nav #titolo {
+    font-size: 2rem;
+    margin: 40px;
+  }
+
+  #main {
+      color: black;
+      display: flex;
+      height: 100vh;
+  }
+
+/*per la sezione nomi*/
+
+#sez1 h1{
+  margin-left: 40px;
+}
+
+
+#collab {
+  display: flex;
+  flex-direction: column;
+
+  margin: 40px;
+  font-size: 15px;
+}
+
+#collab div{
+  cursor: pointer;
+  
+  padding-bottom: 10px;
+
+
+}
+
+#collab div:hover{
+  color: rgb(189, 19, 19);
+}
+
+#collab div span{
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.highlight{
+  font-weight: bold;
+}
+
+
+
+/**per la finestrsa delle info**/
+
+
+#finestra.hidden {
+  display: none;
+}
+
+
+#finestra {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 400px;
+  height: 200px;
+  margin: 80px 40px;
+
+  background-color: rgb(245, 245, 245);
+  border: 1px solid grey;
+  border-radius: 30px;
+
+}
+
+
+#finestra #exit{
+
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+#finestra #info{
+
+  margin: 100px 20px 20px 20px;
+
+}
+
+#finestra #info span{
+
+  letter-spacing: 2px;
+  font-size: 15px;
+
+}
+
+
+
+#finestra #exit{
+  cursor: pointer;
+}
+/* sezione menù  tendina */
+
+
+#link .arrow {
+  cursor: pointer;
+
+  border: solid 3px white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 6px;
+  margin-right: 30px;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 2;
+}
+
+
+#options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  top: 100px;
+  left: calc(100% - 200px);
+
+  border: solid 1px grey;
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+  width: 180px;
+  height: 100px;
+
+  color: black;
+  z-index: 4;
+}
+
+  
+
+#options a:hover {
+  color: gray;
+}
+
+#options.hidden {
+  display: none;
+}
+
+ 
+/* * * per la X * */
+
+
+
+#exit .x {
+  background: teal;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+#exit .x:after {
+  content: '';
+  height: 25px;
+  border-left: 5px solid black;
+  position: absolute;
+  transform: rotate(45deg);
+  
+}
+
+#exit .x:before {
+  content: '';
+  height: 25px;
+  border-left: 5px solid black;
+  position: absolute;
+  transform: rotate(-45deg);
+ 
+}
+

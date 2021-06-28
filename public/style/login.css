@@ -1,0 +1,43 @@
+/*per visualizzare eventuali errori*/
+
+.errore {
+    color: red;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.vuoto {
+    border: solid 3px red;
+      
+}
+
+/* * * * * */
+
+/*per la pagina*/
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+#titolo {
+    font-size: 50px;
+    margin: 5px
+}
+
+#main {
+    padding: 30px;
+    border: solid 0.1px black;
+}
+
+
+
+
+
+
+/* * * * * */
